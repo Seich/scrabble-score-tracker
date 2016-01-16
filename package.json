@@ -4,7 +4,7 @@
   "description": "A website to keep track of your scrabble scores.",
   "main": " ",
   "scripts": {
-    "build": "webpack-dev-server --progress --colors"
+    "build": "webpack-dev-server --progress --colors --hot  --inline"
   },
   "repository": {
     "type": "git",
