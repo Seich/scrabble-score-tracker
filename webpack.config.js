@@ -1,9 +1,11 @@
 var path = require('path');
 var webpack = require('webpack');
 
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
-	entry: './main.js',
-	output: { path: __dirname, filename: 'bundle.js' },
+	entry: './js/app.js',
+	output: { path: __dirname, filename: 'app.js' },
 	devtool: 'source-map',
 	module: {
 		loaders: [
@@ -17,8 +19,16 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				loader: 'style!css!sass'
+				loader: ExtractTextPlugin.extract(
+					'css-loader',
+					'css!sass'
+				)
 			}
 		]
-	}
+	},
+	plugins: [
+        new ExtractTextPlugin("screen.css",{
+        	allChunks: true
+        })
+    ]
 };
