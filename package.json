@@ -1,0 +1,35 @@
+{
+  "name": "scrabble-point-tracker",
+  "version": "1.0.0",
+  "description": "A website to keep track of your scrabble scores.",
+  "main": " ",
+  "scripts": {
+    "build": "webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seich/scrabble-score-tracker.git"
+  },
+  "keywords": [
+    "scrabble"
+  ],
+  "author": "Sergio Diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Seich/scrabble-score-tracker/issues"
+  },
+  "homepage": "https://github.com/Seich/scrabble-score-tracker#readme",
+  "dependencies": {
+    "react": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "sass-loader": "^3.1.2",
+    "webpack": "^1.12.11",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
