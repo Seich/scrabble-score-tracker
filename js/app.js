@@ -1,4 +1,11 @@
 import '../style/base.scss';
 
-import Hello from './hello.jsx';
-import World from './world.jsx';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import CommentBox from './CommentBox';
+
+ReactDOM.render(
+	<CommentBox url="/comments.json" pollInterval={4000} />, 
+	document.getElementById('content')
+);
